@@ -144,7 +144,7 @@ export default {
   .link-button{
     height: 30px;
     width: 80px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 15px;
     font-size: 8px;
   }
