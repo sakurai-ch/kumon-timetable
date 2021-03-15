@@ -14,11 +14,13 @@
             </tr>
           </table>
         </div>
-        <div>
-          <button class="send-button" @click="sendRequest">送信</button>
-        </div>
-        <div>
-          <button class="link-button" @click="list">管理用</button>
+        <div class="button-mobile">
+          <div>
+            <button class="send-button" @click="sendRequest">送信</button>
+          </div>
+          <div>
+            <button class="link-button" @click="list">管理用</button>
+          </div>
         </div>
       </div>
 
@@ -217,6 +219,11 @@ export default {
     margin-left: 0px;
     margin-top: 30px;
     font-size: 8px;
+  }
+
+  .button-mobile{
+    display: flex;
+    justify-content: space-between;
   }
 
   .right {

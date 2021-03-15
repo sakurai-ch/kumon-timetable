@@ -9,11 +9,13 @@
           <p class="subtitle subtitle-mobile">未確定者</p>
           <UserList :userList="userList"></UserList>
         </div>
-        <div>
-          <button class="send-button" @click="list">希望者一覧</button>
-        </div>
-        <div>
-          <button class="link-button" @click="home">希望入力画面</button>
+        <div class="button-mobile">
+          <div>
+            <button class="send-button" @click="list">希望者一覧</button>
+          </div>
+          <div>
+            <button class="link-button" @click="home">希望入力画面</button>
+          </div>
         </div>
       </div>
 
@@ -144,9 +146,14 @@ export default {
   .link-button{
     height: 30px;
     width: 80px;
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: 15px;
     font-size: 8px;
+  }
+
+  .button-mobile{
+    display: flex;
+    justify-content: space-between;
   }
 
   .right {
