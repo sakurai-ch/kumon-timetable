@@ -26,7 +26,7 @@
 
       <div class="right">
         <span class="subtitle">希望時間</span>
-        <span class="comment">※なるべく２カ所以上を選択してください</span>
+        <span class="comment">※可能な日時を複数選択してください</span>
         <TimeTable :frames="frames"></TimeTable>
       </div>
 
