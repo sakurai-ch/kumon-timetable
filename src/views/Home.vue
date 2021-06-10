@@ -9,7 +9,7 @@
           <table class="user-name-input">
             <tr>
               <th>
-                <input type="text" @change="onInput" v-model="$store.state.userName" placeholder="※入力してください" class="box selectable" :class="select">
+                <input type="text" @change="onInput" v-model="$store.state.userName" placeholder="氏名を入力してください" class="box selectable" :class="select">
               </th>
             </tr>
           </table>
