@@ -61,7 +61,7 @@ export default {
       }else if(this.$store.state.selectFrame == 0){
         alert("希望時間を選択してください");
       }else{
-        await axios.post("https://shrouded-fortress-20457.herokuapp.com/api", {
+        await axios.post("http://54.178.7.79/api", {
           userName : this.$store.state.userName,
           timeRequests : this.$store.state.timeRequests,
         });
@@ -87,7 +87,7 @@ export default {
   },
   
   async created(){
-    const data = await axios.get("https://shrouded-fortress-20457.herokuapp.com/api");
+    const data = await axios.get("http://54.178.7.79/api");
     this.$store.state.timeRequests = data.data.timeRequest_data;
     this.frames = data.data.frames_data;
     this.$store.state.dates = data.data.date_data;
