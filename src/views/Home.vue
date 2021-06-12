@@ -61,7 +61,7 @@ export default {
       }else if(this.$store.state.selectFrame == 0){
         alert("希望時間を選択してください");
       }else{
-        await axios.post("http://54.178.7.79/api", {
+        await axios.post("https://timetable-api.wela.work/api", {
           userName : this.$store.state.userName,
           timeRequests : this.$store.state.timeRequests,
         });
@@ -87,7 +87,7 @@ export default {
   },
   
   async created(){
-    const data = await axios.get("http://54.178.7.79/api");
+    const data = await axios.get("https://timetable-api.wela.work/api");
     this.$store.state.timeRequests = data.data.timeRequest_data;
     this.frames = data.data.frames_data;
     this.$store.state.dates = data.data.date_data;

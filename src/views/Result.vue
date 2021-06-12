@@ -58,7 +58,7 @@ export default {
   },
 
   async created(){
-    const data = await axios.get("http://54.178.7.79/api/result");
+    const data = await axios.get("https://timetable-api.wela.work/api/result");
     this.frames = data.data.frames_data;
     this.$store.state.dates = data.data.date_data;
     this.userList = data.data.user_list_data;
