@@ -55,7 +55,7 @@ export default {
   },
 
   async created(){
-    const data = await axios.get("http://127.0.0.1:8000/api/list");
+    const data = await axios.get("https://kumon-timetable-api.wela.work/api/list");
     this.frames = data.data.frames_data;
     this.$store.state.dates = data.data.date_data;
     this.userList = data.data.user_list_data;
